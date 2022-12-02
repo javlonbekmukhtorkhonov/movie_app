@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --primary-color: #000000;
+    --secondary-color: #1a1918; 
+}
+
+body {
+   background-color: var(--primary-color);
+}
+
+.header {
+    background-color: var(--secondary-color);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300&family=Staatliches&display=swap');
+.movie-icon{
+    font-weight: bolder;
+    font-size: 40px;
+    color: white;
+    letter-spacing: 6px;
+    font-family: 'Bebas Neue', cursive;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+}
+  
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.2rem 0.6rem;
+    position: relative;
+} 
+  
+nav ul li a::before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    height: 3px;
+    width: 0;
+    transform: translateX(-50%);
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+} 
+  
+nav ul li a:hover::before{
+    width: 100%;
+} 
+  
+  
